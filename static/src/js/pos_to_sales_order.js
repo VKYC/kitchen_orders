@@ -305,7 +305,7 @@ var CreateKitchenOrderWidget = screens.ActionButtonWidget.extend({
             .done(function(result) {
                 console.log(result);
             });
-        },create_kitchen_order_rpc: function(values){
+            },create_kitchen_order_rpc: function(values){
             var self = this;
                 rpc.query({
                 model: 'mrp.production',
