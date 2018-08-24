@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+
+    <t t-name="CustomInfoPopup">
+        <div class="modal-dialog">
+            <div class="popup popup-textinput" style="height:260px !important">
+                <p class="title" id="message_title" style="width:92%">
+                    <t t-esc=" widget.options.title || 'Message' " />
+                </p>
+                <p class="body" id="message_body">
+                    <t t-esc="  widget.options.body || '' " />
+                </p>
+                <div class="footer">
+                    <div class="button cancel">
+                        OK
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="CreateKitchenOrderWidget">
+        <div class='control-button'>
+            <i class='fa fa-cutlery' />Añadir Pedido a Cocina
+        </div>
+    </t>
+
+</templates>
