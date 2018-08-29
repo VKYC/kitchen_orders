@@ -1,17 +1,6 @@
 # -*- coding: utf-8 -*-
 #################################################################################
-# Author      : Webkul Software Pvt. Ltd. (<https://webkul.com/>)
-# Copyright(c): 2015-Present Webkul Software Pvt. Ltd.
-# All Rights Reserved.
 #
-#
-#
-# This program is copyright property of the author mentioned above.
-# You can`t redistribute it and/or modify it.
-#
-#
-# You should have received a copy of the License along with this program.
-# If not, see <https://store.webkul.com/license.html/>
 #################################################################################
 {
   "name"                 :  "Ordenes de Cocina",
@@ -29,16 +18,11 @@
                              'stock',
                             ],
   "data"                 :  [
-                              'views/pos_to_sales_order_view.xml',
                               'views/templates.xml',
-                              'views/kitchen_orders.xml',
                               'views/product_view.xml',
-                              'data/pos_to_sale_order_demo.xml',
-                              'security/ir.model.access.csv',
-                              # 'views/pos_ticket_view.xml',
                             ],
   "qweb"                 :  [
-                              'static/src/xml/pos_to_sale_order.xml',
+                              'static/src/xml/kitchen_order.xml',
                               'static/src/xml/pos_ticket_view.xml',
                             ],
   "images"               :  ['static/description/Banner.png'],
