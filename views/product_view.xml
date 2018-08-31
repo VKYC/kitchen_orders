@@ -18,8 +18,8 @@
         <field name="inherit_id" ref="mrp.mrp_production_tree_view"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='state']" position="after">
-               <button name="open_produce_product" string="Producir" type="object" class="oe_highlight"/>
-               <button name="button_mark_done" string="Marcar Como Hecho" type="object" class="oe_highlight"/>
+               <button name="open_produce_product" string="Producir" type="object" class="oe_highlight" attrs="{'invisible':[('state','!=','confirmed')]}"/>
+               <button name="button_mark_done" string="Marcar Como Hecho" type="object" class="oe_highlight" attrs="{'invisible':[('state','!=','progress')]}"/>
             </xpath>
         </field>
     </record>
